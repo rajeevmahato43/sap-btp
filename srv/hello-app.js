@@ -5,4 +5,4 @@ module.exports = function (HelloWorld) {
         return "Welcome to sap to UI Your msg is: " + req.data.msg;
 
     });
-} 
+}  
