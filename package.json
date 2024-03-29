@@ -8,12 +8,24 @@
   "dependencies": {
     "@sap/cds": "^7",
     "express": "^4",
-    "sqlite3": "^5.1.7"
+    "@sap/cds-hana": "^2"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7"
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "hana",
+        "pool": {
+          "max": 1400,
+          "min": 100
+        }
+      }
+    }
   }
 }

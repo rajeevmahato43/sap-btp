@@ -3,9 +3,9 @@ namespace userModel.User;
 
 
 
-entity UserProfile : managed,cuid {
+entity UserProfile : managed {
     name: String(100);
-    email: String(100);
+    key email: String(100);
     phoneNumber: Integer;
     address: String(200);
     password: String(300);
